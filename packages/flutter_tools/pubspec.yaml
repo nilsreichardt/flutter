@@ -66,8 +66,14 @@ dependencies:
   # We depend on very specific internal implementation details of the
   # 'test' package, which change between versions, so when upgrading
   # this, make sure the tests are still running correctly.
-  test_api: 0.7.9
-  test_core: 0.6.15
+  test_api:
+    git:
+      url: https://github.com/dart-lang/test/
+      ref: fe41d5408bfd7c73cc4309da6ab6f0ba46cbf417
+  test_core:
+    git:
+      url: https://github.com/dart-lang/test/
+      ref: fe41d5408bfd7c73cc4309da6ab6f0ba46cbf417
 
   vm_service: 15.0.2
 
